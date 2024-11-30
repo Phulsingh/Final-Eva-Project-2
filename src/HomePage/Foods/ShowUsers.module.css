@@ -1,0 +1,71 @@
+/* Main container styling */
+.statsContainer {
+    margin: 0 100px;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff8c00; /* Orange background */
+    padding: 20px;
+    border: 2px solid #ff4500; /* Border with a slightly darker orange */
+    border-radius: 8px; /* Rounded corners */
+    gap: 10px; /* Spacing between rows on wrap */
+  }
+  
+  /* Individual statistic item */
+  .statItem {
+    flex: 1; /* Flexible width for equal spacing */
+    text-align: center;
+    min-width: 150px; /* Ensures a minimum size for smaller screens */
+  }
+  
+  /* Statistic count styling */
+  .statCount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* White text for numbers */
+  
+
+  }
+  
+  /* Statistic label styling */
+  .statLabel {
+    font-size: 14px;
+    color: #fff; /* White text for labels */
+    margin: 5px 0 0;
+  }
+  
+  /* Divider for desktop layout */
+  .statItem:not(:last-child) {
+    border-right: 1px solid #fff; /* Vertical divider for desktop */
+    padding-right: 10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .statsContainer {
+      flex-direction: column; /* Stack items vertically */
+      margin: 5vw;
+      height: 100vh;
+      gap: 15px; /* Add space between items in column view */
+      position: relative;
+      top: 800px;
+    }
+  
+    .statItem:not(:last-child) {
+      border-right: none;
+      border-bottom: 1px solid #fff; /* Horizontal divider for smaller screens */
+      padding-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .statCount {
+      font-size: 40px; /* Slightly smaller text for very small screens */
+    }
+  
+    .statLabel {
+      font-size: 24px; /* Adjust label size for smaller screens */
+    }
+  }
+  

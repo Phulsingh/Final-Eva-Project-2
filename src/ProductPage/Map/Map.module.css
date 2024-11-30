@@ -1,0 +1,119 @@
+.container {
+  margin: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 90vw;
+  height: 70vh;
+  overflow: hidden;
+}
+iframe {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+/* Container for map and card */
+
+/* Map styles */
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.mapImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the map image covers the entire area */
+}
+
+/* Card styles */
+.card {
+  position: absolute; /* Overlay the card on the map */
+  top: 50%;
+  left: 5%; /* Adjust position */
+  transform: translateY(-50%);
+  background-color: #03081f; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 30px;
+  border-radius: 10px;
+  width: 22vw;
+  height: 70%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  z-index: 10; /* Ensure the card appears above the map */
+  font-family: Arial, sans-serif;
+}
+
+/* Typography */
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #ffaa00; /* Orange color */
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.address {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.contact {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #00aaff; /* Bright blue color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        margin: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 90vw;
+        height: 90vh;
+        overflow: hidden;
+      }
+  .card {
+    height: 50vh;
+    width: 90%;
+    left: 5%;
+    right: 5%; /* Center the card */
+    max-width: unset;
+    padding: 15px;
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .address,
+  .contact {
+    font-size: 0.8rem;
+  }
+}

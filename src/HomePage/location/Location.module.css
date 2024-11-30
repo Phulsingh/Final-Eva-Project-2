@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0 50px;
+}
+
+.promo {
+  font-size: 14px;
+  color: #555;
+}
+
+.promoLink {
+  color: orange;
+  font-weight: bold;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.location {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.changeLocation {
+  color: orange;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cartButton {
+  display: flex;
+  align-items: center;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cartIcon {
+  margin-left: 10px;
+}
+.ordersLogo{
+    display: none;
+}
+
+.basket{
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar{
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .navbar{
+    margin: 0;
+    display: none;
+  }
+  .ordersLogo{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .basket{
+    width: 100%;
+    background-color: red;
+    display: flex;
+   
+  }
+  .basket button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+}

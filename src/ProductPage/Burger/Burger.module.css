@@ -1,0 +1,194 @@
+.main {
+  margin: 0 50px;
+  height: 80vh;
+}
+.container {
+  margin-top: 10px;
+  height: 60vh;
+  width: 100%;
+  margin-right: 50px;
+  background-color: #03081fe5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: white;
+  border-radius: 2vw;
+}
+.leftSide {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 15px;
+  padding: 50px;
+}
+.leftSide .buttons {
+  display: flex;
+  gap: 15px;
+}
+.leftSide .buttons div {
+  border: 1px solid white;
+  padding: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 2vw;
+}
+.RightSide {
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  width: 50%;
+  height: 10%;
+  padding: 40px;
+  margin-right: 50px;
+}
+
+.firstImg img {
+  height: 18vh;
+  position: relative;
+  top: 32vh;
+  left: 5vh;
+}
+.secondImg img {
+  height: 50vh;
+}
+
+.main button {
+  padding: 1vw 2.5vw;
+  background-color: #FC8A06;
+  position: relative;
+  bottom: 23px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  gap: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.searchDiv {
+  height: 5vh;
+  width: 95vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchDiv p {
+  font-size: 25px;
+  font-weight: 700;
+}
+.searchDiv div {
+  margin-right: 50px;
+  border: 1px solid #03081F;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.searchDiv div input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #03081F;
+}
+@media (max-width: 600px) {
+  .main {
+    margin: 20px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main button {
+    display: none;
+  }
+  .container {
+    margin-top: 10px;
+    height: 100vh;
+    width: 95vw;
+    background-color: #03081fe5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    color: white;
+    border-radius: 2vw;
+  }
+  .leftSide {
+    padding: 5vw;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .leftSide p {
+    text-align: left;
+    margin-top: 25px;
+  }
+  .leftSide .heading {
+    text-align: left;
+    font-size: 30px;
+  }
+  .RightSide {
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .RightSide .secondImg img {
+    width: 400px;
+    height: 250px;
+    position: relative;
+  }
+  .RightSide .firstImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .RightSide .firstImg img {
+    position: relative;
+    z-index: 5;
+    right: 400px;
+    top: 380px;
+    width: 100px;
+    display: none;
+  }
+  .buttons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .buttons div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    gap: 20px;
+  }
+  .searchDiv {
+    display: none;
+  }
+}

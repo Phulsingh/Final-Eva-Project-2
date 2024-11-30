@@ -1,0 +1,150 @@
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Login box */
+  .loginBox {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100;
+    text-align: center;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .img{
+    color: orange;
+    margin-bottom: 20px;
+  }
+  
+  /* Welcome message */
+  .welcome {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #0C1421;
+    text-align: left;
+  }
+  
+  .subheading {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Form styles */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .label {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+  /* Options (forgot password) */
+  .options {
+    text-align: right;
+  }
+  
+  .forgotPassword {
+    font-size: 12px;
+    color: #FC8A06;
+    text-decoration: none;
+  }
+  
+  .forgotPassword:hover {
+    text-decoration: underline;
+  }
+  
+  /* Sign-in button */
+  .signInButton {
+    background-color: #FC8A06;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .signInButton:hover {
+    background-color: #FC8A10;
+  }
+  
+  /* Sign-up link */
+  .signUp {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .signUpLink {
+    color:#FC8A06;
+    text-decoration: none;
+  }
+  
+  .signUpLink:hover {
+    text-decoration: underline;
+  }
+  .signInWithGoogle .signInButton{
+    background-color: #FC8A06;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .loginBox {
+      padding: 20px;
+    }
+  
+    .welcome {
+      font-size: 18px;
+    }
+  
+    .subheading {
+      font-size: 12px;
+    }
+  
+    .input {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .signInButton {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .signUp {
+      font-size: 12px;
+    }
+  }
+  

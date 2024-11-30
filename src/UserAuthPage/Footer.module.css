@@ -1,0 +1,245 @@
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+  }
+  
+  .leftSection, .centerSection {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 30px;
+  }
+  .rightSection{
+    display: flex;
+    padding-top: 10px;
+  }
+  .logo {
+    height: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .logo img{
+    height: 60px;
+  }
+  
+  .orderText {
+    color: black;
+  }
+  
+  .ukText {
+    color: #ff00ff; /* Pink color for 'UK' */
+  }
+  
+  .appLinks img {
+    max-width: 300px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-top: 20px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  
+  .companyInfo {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .centerSection h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .subscription {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background: #D9D9D9;
+
+  }
+  
+  .emailInput {
+    border: none;
+    outline: none;
+    background-color:#D9D9D9;
+    ;
+  }
+  
+  .subscribeButton {
+    background: #FC8A06;
+    color: white;
+    border: none;
+    height: 40px;
+    margin-left: 10px;
+    padding: 8px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .noSpamText {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .noSpamText a {
+    color: blue;
+    text-decoration: underline;
+  }
+  .socialIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .socialIcons img {
+    width: 50px;
+    margin-right: 8px;
+    cursor: pointer;
+   
+  }
+  
+   .rightSection{
+    display: flex;
+
+   } 
+  .rightSection ul {
+    list-style-type: none;
+    padding-right: 20px;
+  }
+  
+  .rightSection li {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .rightSection li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+
+  }
+  
+  .bottomBar {
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #091540;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .bottomLinks a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .bottomLinks a:hover {
+    text-decoration: none;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      margin: 0;
+    }
+  
+    .leftSection{
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+    }
+  
+
+    .emailInput {
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .subscribeButton {
+      border-radius: 5px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+    .socialIcons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .socialIcons img {
+      margin-right: 5px;
+      width: 25px;
+    }
+     .companyInfo{
+      margin-bottom: 0;
+     }
+     .leftSection, .centerSection {
+    padding: 0;
+     }
+     .subscription {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     }
+     .subscription input{
+      padding-top: 10px;
+     }
+     .socialIcons img {
+      width: 50px;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+    .rightSection{
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+      align-items: center;
+      justify-content: start;
+      padding-left: 20px;
+      gap: 20px;
+    }
+    .bottomLinks{
+      display: none;
+    }
+    .bottomBar{
+      width: 100vw;
+      margin:0;
+    }
+  }
+  

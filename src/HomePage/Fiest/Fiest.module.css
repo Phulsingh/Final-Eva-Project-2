@@ -1,0 +1,236 @@
+.container {
+  display: flex;
+  margin: 0 50px;
+  height: 82vh;
+  border-radius: 10px;
+  background-color:  #FBFBFB ;
+  z-index: -2;
+}
+
+.container {
+  overflow-y: auto; 
+  scrollbar-width: thin; 
+  scrollbar-color: #f7931e #fbfbfb;
+}
+
+
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #fbfbfb; 
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #f7931e; 
+  border-radius: 10px; 
+  border: 2px solid #fbfbfb; 
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #e67e22;
+}
+.form {
+  height: 100%;
+  width: 50%;
+}
+.contents {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.rightDiv{
+    position: relative;
+    left: 45px;
+    height: 500px;
+    width: 450px;
+    background-color: #f7931e;
+    border-top-left-radius: 35%;
+    z-index: 1;
+}
+
+
+
+
+.landingPage {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 81vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+    width:33%;
+    margin-left: 50px;
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  .imgs{
+    display: flex;
+    position: absolute;
+  }
+  .imgs .img1{
+    position: relative;
+    height: 570px;
+    left: 300px;
+    z-index: 5;
+  }
+  .imgs .img2{
+    height: 350px;
+    position: relative;
+    top: 220px;
+    z-index: 3;
+  }
+  .subtext {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  .subtext h1{
+    font-size: 55px;
+  }
+  
+  .headline {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: #f7931e; 
+  }
+  
+  .searchSection {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    height: 60px;
+    
+    font-weight: 600;
+  }
+  .searchSection input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    
+  }
+  
+  .postcodeInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+  }
+  
+  .searchButton {
+    padding: 10px 20px;
+    background-color: #f7931e;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 100%;
+    width: 40%;
+    font-size: 20px;
+  }
+  
+  .searchButton:hover {
+    background-color: #e67e22;
+  }
+  
+
+.container1{
+  display: none;
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+
+  .headline {
+    font-size: 20px;
+  }
+
+  .postcodeInput {
+    font-size: 14px;
+  }
+
+  .searchButton {
+    font-size: 14px;
+  }
+}
+
+
+  @media (max-width: 768px) {
+    .headline {
+      font-size: 2rem;
+    }
+  
+    .postcodeInput {
+      width: 100%;
+    }
+  
+    .searchSection {
+      flex-direction: column;
+    }
+  
+    .searchButton {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .headline {
+      font-size: 1.8rem;
+    }
+  
+    .subtext {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width:600px) {
+    .container{
+      margin: 0;
+    }
+    .landingPage{
+       display: none;
+    }
+    .imgs{
+      display: none;
+    }
+    .contents{
+      display: none;
+    }
+    .container1{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+    .rightDiv{
+      display: none;
+    }
+    .content2{
+      background-color: #666;
+      height:300px;
+      width:300px;
+      margin-top: 5px;
+    }
+  }

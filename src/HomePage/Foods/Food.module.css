@@ -1,0 +1,78 @@
+.container{
+    margin: 0 50px;
+}
+.nav{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.nav h3{
+    font-weight: 700;
+    margin-left: 20px;
+}
+.ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ul li{
+    display: flex;
+    padding: 0 50px;
+    cursor: pointer;
+}
+.ul button{
+    padding: 10px;
+    height: 40px;
+    width: 200px;
+    color: #FC8A06;
+    background-color: transparent;
+    border-radius:20px ;
+    border: 2px solid #FC8A06;;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    cursor: pointer;
+}
+.ul button img{
+    display: none;
+}
+
+
+
+
+
+@media (max-width:600px) {
+    nav{
+       display: flex;
+       align-items: start;
+       justify-content: center;
+    }
+    .container{
+        margin: 0;
+    }
+    .divImage{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+    .divImage img{
+        width: 60vw;
+    }
+   .nav li{
+        display: none;
+    }
+    .nav ul button{
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black;
+      color: black;
+    }
+    .ul button img{
+        display: flex;
+    }
+
+}
